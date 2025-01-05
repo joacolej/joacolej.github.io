@@ -1,0 +1,51 @@
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    font-size:large;
+    margin: 20px;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.contact-container {
+    display: flex; /* Arrange children side-by-side */
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space between items */
+    padding: 0px;
+    max-width: 1700px; /*Optional: Limit container width */
+    margin: 0 auto; /* Center the container */
+}
+
+.contact-info {
+    padding: 80px;
+    flex: 1; /* Take up available space */
+    margin-right: 20px; /* Add space between text and photo */
+}
+
+.photo img {
+    max-width: 250px; /* Adjust the image size */
+    border-radius: 50%; /* Optional: Make the image circular */
+    display: block; /* Ensure proper alignment */
+}
+
+.posts a {
+    display: block;
+    margin: 5px 0;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.posts a:hover {
+    text-decoration: underline;
+}
+
+.conferences ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
