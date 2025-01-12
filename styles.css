@@ -59,7 +59,7 @@ ul {
 }
 
 ul li::before {
-    content: "• ";
+    content: none;
     color: #1178b8;
 }
 
