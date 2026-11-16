@@ -1,75 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal webpage of Joaquín Lejtreger">
-    <meta name="author" content="Joaquín Lejtreger">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Joaquín Lejtreger</title>
+  <meta name="description" content="Joaquín Lejtreger, Postdoc at the Max Planck Institute for Mathematics in the Sciences, working on Anosov representations, Coxeter groups and geometric structures.">
+  <meta name="author" content="Joaquín Lejtreger">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://joacolej.github.io/">
+
+  <!-- Preview card shown when the link is shared (Slack, e-mail, social media) -->
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://joacolej.github.io/">
+  <meta property="og:title" content="Joaquín Lejtreger">
+  <meta property="og:description" content="Postdoc at the Max Planck Institute for Mathematics in the Sciences. Anosov representations, Coxeter groups, geometric structures.">
+  <meta property="og:image" content="https://joacolej.github.io/portrait.jpg">
+  <meta property="og:image:width" content="400">
+  <meta property="og:image:height" content="400">
+  <meta property="og:image:alt" content="Joaquín Lejtreger">
+  <meta property="profile:first_name" content="Joaquín">
+  <meta property="profile:last_name" content="Lejtreger">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <title>Joaquín Lejtreger - Personal Website</title>
-    <header>
+  <div class="page">
+    <header class="masthead">
+      <img class="portrait" src="portrait.jpg" width="400" height="400"
+           alt="Joaquín Lejtreger drinking mate in the snow">
+      <div>
         <h1>Joaquín Lejtreger</h1>
+        <p class="role">
+          Postdoc in mathematics<br>
+          <a href="https://www.mis.mpg.de/">MPI MiS</a>, Leipzig, Germany
+        </p>
+        <p class="email">joaquin.lejtreger (at) mis (dot) mpg (dot) de</p>
+      </div>
     </header>
 
-    <section id="contact">
-        <h2>About me</h2>
-        <div class="contact-container">
-            <div class="contact-info">
-                <p>
-                    I am an ATER and PhD student in Pure Mathematics at Sorbonne Université, working at the IMJ-PRG under the supervision of 
-                    <a href="https://sambarino-andres.apps.math.cnrs.fr">Andrés Sambarino</a>.  
-                    My main field of research is Anosov representations. In particular, I study deformations of the Barbot representation in SL(3, ℝ) and representations of Coxeter groups into higher-rank Lie groups.  
-                    I am especially interested in the geometric structures these representations parametrize and in constructing fundamental domains in the associated symmetric spaces.  
-                    My other interests include hyperbolic geometry, low-dimensional topology, and the pressure metric in the Hitchin component for triangle groups.
-                  </p>
-                  <p> 
-                    I also like programming, I use Python and Julia to produce visualizations of limit curves of Anosov representations (with Matplotlib and Makie) and to experiment with computational aspects of my research.
-                  </p>
-                <p>If you want to contact me you can find me at <strong>lejtreger(at)imj-prg(dot)fr </strong></p>            </div>
-            <div class="photo">
-                <img src="my-photo-snow.png" alt="Joaquin Lejtreger" />
+    <main>
+      <section class="bio" aria-label="About me">
+        <p>
+          I am a postdoc at the Max Planck Institute for Mathematics in the Sciences in Leipzig, Germany. Before that, I did my PhD at Sorbonne Université, at the IMJ-PRG under the supervision of <a href="https://sambarino-andres.apps.math.cnrs.fr">Andrés Sambarino</a>.
+          My main field of research is Anosov representations.
+          In particular, I study deformations of the Barbot representation in SL(3,&nbsp;ℝ)
+          and representations of Coxeter groups into higher-rank Lie groups.
+          I am especially interested in the geometric structures these representations parametrize
+          and in constructing fundamental domains in the associated symmetric spaces.
+          My other interests include hyperbolic geometry, low-dimensional topology,
+          and the pressure metric in the Hitchin component for triangle groups.
+        </p>
+        <p>
+          I also like programming: I use Python and Julia to produce visualizations of limit curves of Anosov representations (with Matplotlib and Makie) and to experiment with computational aspects of my research.
+        </p>
+      </section>
+
+      <section aria-labelledby="papers">
+        <h2 id="papers">Papers</h2>
+        <ol class="entries">
+          <li>
+            <time datetime="2026">2026</time>
+            <div>
+              <a class="title" href="https://arxiv.org/abs/2611.10823">Parallel domains in SL(3,&nbsp;ℝ) and the ideal triangle reflection group</a>
+              <p class="meta">with <a href="https://lemajo.github.io">Joaquín Lema</a>&nbsp;· Preprint&nbsp;· arXiv:2611.10823</p>
             </div>
-        </div>
-    </section>
+          </li>
+          <li>
+            <time datetime="2026">2026</time>
+            <div>
+              <a class="title" href="https://arxiv.org/abs/2604.18994">On separated families of Anosov representations</a>
+              <p class="meta">with <a href="https://lemajo.github.io">Joaquín Lema</a>&nbsp;· Preprint&nbsp;· arXiv:2604.18994</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2025">2025</time>
+            <div>
+              <a class="title" href="https://arxiv.org/abs/2509.14825">On the Hausdorff dimension of geodesics with bounded self-intersection angle</a>
+              <p class="meta">Preprint&nbsp;· arXiv:2509.14825</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2021">2021</time>
+            <div>
+              <a class="title" href="https://hdl.handle.net/20.500.12008/37156">Application of Language Technologies to Assist English Teaching</a>
+              <p class="meta">with B. González, I. Ivagnes, L. Chiruzzo and A. Rosá</p>
+              <p class="meta">
+                40th International Conference of the Chilean Computer Science Society (SCCC), La Serena, Chile&nbsp;·
+                <a href="https://doi.org/10.1109/SCCC54552.2021.9650395">doi:10.1109/SCCC54552.2021.9650395</a>
+              </p>
+            </div>
+          </li>
+        </ol>
+      </section>
 
-
-
-    <section id="posts" class="posts">
-        <h2>Publications</h2>
-        <ul>
+      <section aria-labelledby="theses">
+        <h2 id="theses">Theses</h2>
+        <ol class="entries">
             <li>
-            <a href="https://arxiv.org/abs/2604.18994">
-                On separated Families of Anosov Representations
-            </a>
-            — with <a href="https://lemajo.github.io">Joaquín Lema</a>
-            - Preprint
-            </li>            
-            <li><a href="http://arxiv.org/abs/2509.14825">On the Hausdorff dimension of geodesics with bounded self-intersection angle</a> - Preprint</li>
-            <li><a href="lejtreger-tesis-maestria.pdf" download>MSc Thesis: A Morse Lemma for globally symmetric spaces of the non-compact type (Spanish)</a></li>
-            <li><a href="lejtreger-tesis-grado.pdf" download>Bachelor's Thesis: Quadratic polynomials with superattracting cycles (Spanish)</a></li>
-            <li><a href="tg-gonzales-ivagnes-lejtreger.pdf" download>Engineering Thesis: Constructing tools to support language learning</a></li>
-            <li><a href="https://hdl.handle.net/20.500.12008/37156">B. González, I. Ivagnes, J. Lejtreger, L. Chiruzzo and A. Rosá, "Application of Language Technologies to Assist English Teaching," 2021 40th International Conference of the Chilean Computer Science Society (SCCC), La Serena, Chile, 2021, pp. 1-8, doi: 10.1109/SCCC54552.2021.9650395.	</a></li>
-        </ul>
-        
-    </section>
-    
-    <section id="conferences" class="conferences">
-        <h2>Conferences</h2>
-        <p>Here are some conferences I have attended (or will attend):</p>
-        <ul>
-            <li>Geometry Seminar - October 2025 - MPI (Leipzig, Germany) - Talk: On the Hausdorff dimension of geodesics with bounded self-intersection  angle</li>
-            <li>Dynamical Systems Seminar - July 2025 - UdelaR (Montevideo, Uruguay) - Talk: On the Hausdorff dimension of geodesics with bounded self-intersection  angle</li>
-            <li><a href="https://www.cirm-math.fr/Schedule/display.php?id_renc=3241"> Geometric structures and discrete group actions</a> - April 2025 - CIRM (Marseille, France) - Short talk</li>
-            <li><a href="https://www.ajites.fr/our-activities/science-pizza"> Science pizza monthly event</a> - January 2025 - Institute du Cerveau (Paris, France) - Math outreach talk</li>
-            <li><a href="https://www.mis.mpg.de/events/series/20-years-of-anosov-representations"> 20 years of Anosov Representations</a> - October 2024 - Max Planck Institute (Leipzig, Germany) - Presenter in the young researchers workshop</li>
-            <li><a href="https://sites.google.com/view/3erencuentrodeestudiantesmat"> Tercer encuentro de estudiantes de matemática</a> - August 2023 - UdelaR (Montevideo, Uruguay) - Presenter</li>
-            <li><a href="https://sites.google.com/view/encuentroposgradomat/general"> Segundo encuentro de estudiantes de matemática</a> - November 2021 - UdelaR (Montevideo, Uruguay) - Co-organizer</li>
-        </ul>
-    </section>
-    <!-- <footer>
-        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
-    </footer> -->
+              <time datetime="2026">2026</time>
+            <div>
+              <a class="title" href="https://hal.science/tel-05845949v1/document">Geometric structures and critical exponents associated to Anosov representations</a>
+              <p class="meta">PhD thesis, Sorbonne Université (IMJ-PRG)&nbsp;· PDF</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2021">2021</time>
+            <div>
+              <a class="title" href="lejtreger-tesis-maestria.pdf">A Morse Lemma for globally symmetric spaces of the non-compact type</a>
+              <p class="meta">MSc thesis, Universidad de la República&nbsp;· in Spanish&nbsp;· PDF</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2020">2020</time>
+            <div>
+              <a class="title" href="lejtreger-tesis-grado.pdf">Quadratic polynomials with superattracting cycles</a>
+              <p class="meta">Bachelor’s thesis, Universidad de la República&nbsp;· in Spanish&nbsp;· PDF</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2019">2019</time>
+            <div>
+              <a class="title" href="tg-gonzales-ivagnes-lejtreger.pdf">Constructing tools to support language learning</a>
+              <p class="meta">Engineering thesis, Universidad de la República, with Bernabé González and Isabel Ivagnes&nbsp;· in Spanish&nbsp;· PDF</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="talks">
+        <h2 id="talks">Talks &amp; conferences</h2>
+        <ol class="entries">
+          <li>
+            <time datetime="2026-11-12">Nov 2026</time>
+            <div>
+              <p class="title">Geometry, Groups and Dynamics Research Seminar<span class="where">&nbsp;· MPI MiS, Leipzig</span></p>
+              <p class="meta">Talk: <a href="https://www.mis.mpg.de/events/event/the-riemannian-symmetric-space-of-sl3-r-and-its-friends"><cite>The Riemannian symmetric space of SL(3,&nbsp;ℝ) and its friends</cite></a></p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-08">Aug 2026</time>
+            <div>
+              <p class="title">Compact Clifford-Klein forms: constructions and obstructions<span class="where">&nbsp;· Pforzheim, Germany</span></p>
+              <p class="meta">Workshop, August 24–28, 2026&nbsp;· Talk: <cite>Maximally stretched laminations (from the work of Guéritaud-Kassel)</cite></p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-06-22">Jun 2026</time>
+            <div>
+              <p class="title"><a href="https://www.mis.mpg.de/events/series/queer-in-math-day-2026">Queer in Math Day 2026</a><span class="where">&nbsp;· MPI MiS, Leipzig</span></p>
+              <p class="meta">Lightning talk: <cite>Triangle groups acting on the symmetric space</cite></p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-04">Apr 2026</time>
+            <div>
+              <p class="title"><a href="https://hilbertxfield.pages.math.cnrs.fr/en/event/thirdmeeting">ANR project: Hilbert geometry on any valued field, third meeting</a><span class="where">&nbsp;· Sorbonne Université, Paris</span></p>
+              <p class="meta">Research talk: <cite>Estimating critical exponent for Separated Anosov Representations of Free Groups</cite></p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2025-10">Oct 2025</time>
+            <div>
+              <p class="title">Geometry Seminar<span class="where">&nbsp;· MPI MiS, Leipzig</span></p>
+              <p class="meta">Research talk: <cite>On the Hausdorff dimension of geodesics with bounded self-intersection angle</cite></p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2025-07">Jul 2025</time>
+            <div>
+              <p class="title">Dynamical Systems Seminar<span class="where">&nbsp;· UdelaR, Montevideo</span></p>
+              <p class="meta">Talk: <cite>On the Hausdorff dimension of geodesics with bounded self-intersection angle</cite></p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2025-04">Apr 2025</time>
+            <div>
+              <p class="title"><a href="https://www.cirm-math.fr/Schedule/display.php?id_renc=3241">Geometric structures and discrete group actions</a><span class="where">&nbsp;· CIRM, Marseille</span></p>
+              <p class="meta">Short talk: <cite>On the Hausdorff dimension of sets of simple geodesics.</cite></p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2025-01">Jan 2025</time>
+            <div>
+              <p class="title"><a href="https://www.ajites.fr/our-activities/science-pizza">Science Pizza</a><span class="where">&nbsp;· Institut du Cerveau, Paris</span></p>
+              <p class="meta">Math outreach talk at the monthly event</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2024-10">Oct 2024</time>
+            <div>
+              <p class="title"><a href="https://www.mis.mpg.de/events/series/20-years-of-anosov-representations">20 years of Anosov Representations</a><span class="where">&nbsp;· MPI MiS, Leipzig</span></p>
+              <p class="meta">Presenter in the young researchers workshop</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2023-08">Aug 2023</time>
+            <div>
+              <p class="title"><a href="https://sites.google.com/view/3erencuentrodeestudiantesmat" lang="es">Tercer encuentro de estudiantes de matemática</a><span class="where">&nbsp;· UdelaR, Montevideo</span></p>
+              <p class="meta">Presenter</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="events">
+        <h2 id="events">Organized events</h2>
+        <ol class="entries">
+          <li>
+            <time datetime="2027">2027</time>
+            <div>
+              <p class="title">Queer in Math Day 2027<span class="where">&nbsp;· MPI MiS, Leipzig</span></p>
+              <p class="meta">Co-organizer&nbsp;· If you would like to know more, get in touch by e-mail.</p>
+            </div>
+          </li>
+          <li>
+            <span class="when">Since <time datetime="2026">2026</time></span>
+            <div>
+              <p class="title">Geometry Seminar<span class="where">&nbsp;· MPI MiS, Leipzig</span></p>
+              <p class="meta">Co-organizer</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2021-11">Nov 2021</time>
+            <div>
+              <p class="title"><a href="https://sites.google.com/view/encuentroposgradomat/general" lang="es">Segundo encuentro de estudiantes de matemática</a><span class="where">&nbsp;· UdelaR, Montevideo</span></p>
+              <p class="meta">Co-organizer</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="colophon">
+      <svg class="farey" viewBox="0 0 64 64" role="img" aria-label="The Farey tessellation of the hyperbolic plane"><title>The Farey tessellation of the hyperbolic plane</title><circle cx="32" cy="32" r="31" fill="currentColor"/><path style="fill: var(--bg)" d="M32 63A31 31 0 0 1 63 32A31 31 0 0 1 32 1L32 63ZM32 63A15.5 15.5 0 0 0 7.2 50.6A10.3 10.3 0 0 0 1 32A31 31 0 0 1 32 63ZM1 32A10.3 10.3 0 0 0 7.2 13.4A15.5 15.5 0 0 0 32 1A31 31 0 0 1 1 32ZM32 63A10.3 10.3 0 0 1 50.6 56.8A4.4 4.4 0 0 1 56.8 50.6A15.5 15.5 0 0 0 32 63ZM56.8 50.6A3.9 3.9 0 0 1 60.6 43.9A6.2 6.2 0 0 1 63 32A10.3 10.3 0 0 0 56.8 50.6ZM63 32A6.2 6.2 0 0 1 60.6 20.1A3.9 3.9 0 0 1 56.8 13.4A10.3 10.3 0 0 0 63 32ZM56.8 13.4A4.4 4.4 0 0 1 50.6 7.2A10.3 10.3 0 0 1 32 1A15.5 15.5 0 0 0 56.8 13.4ZM32 63A7.8 7.8 0 0 0 17.4 59.4A2.4 2.4 0 0 0 13.4 56.8A10.3 10.3 0 0 1 32 63ZM13.4 56.8A1.8 1.8 0 0 0 10.6 54.4A2.6 2.6 0 0 0 7.2 50.6A4.4 4.4 0 0 1 13.4 56.8ZM7.2 50.6A2.4 2.4 0 0 0 4.6 46.6A1.5 1.5 0 0 0 3.4 43.9A3.9 3.9 0 0 1 7.2 50.6ZM3.4 43.9A1.7 1.7 0 0 0 2.2 40.7A4.4 4.4 0 0 0 1 32A6.2 6.2 0 0 1 3.4 43.9ZM1 32A4.4 4.4 0 0 0 2.2 23.3A1.7 1.7 0 0 0 3.4 20.1A6.2 6.2 0 0 1 1 32ZM3.4 20.1A1.5 1.5 0 0 0 4.6 17.4A2.4 2.4 0 0 0 7.2 13.4A3.9 3.9 0 0 1 3.4 20.1ZM7.2 13.4A2.6 2.6 0 0 0 10.6 9.6A1.8 1.8 0 0 0 13.4 7.2A4.4 4.4 0 0 1 7.2 13.4ZM13.4 7.2A2.4 2.4 0 0 0 17.4 4.6A7.8 7.8 0 0 0 32 1A10.3 10.3 0 0 1 13.4 7.2ZM32 63A6.2 6.2 0 0 1 43.9 60.6A1.5 1.5 0 0 1 46.6 59.4A7.7 7.7 0 0 0 32 63ZM46.6 59.4A1 1 0 0 1 48.4 58.3A1.3 1.3 0 0 1 50.6 56.8A2.4 2.4 0 0 0 46.6 59.4ZM50.6 56.8A1.1 1.1 0 0 1 52.4 55.4A0.7 0.7 0 0 1 53.4 54.4A1.8 1.8 0 0 0 50.6 56.8ZM53.4 54.4A0.8 0.8 0 0 1 54.4 53.4A1.8 1.8 0 0 1 56.8 50.6A2.6 2.6 0 0 0 53.4 54.4ZM56.8 50.6A1.7 1.7 0 0 1 58.7 47.7A0.7 0.7 0 0 1 59.4 46.6A2.4 2.4 0 0 0 56.8 50.6ZM59.4 46.6A0.6 0.6 0 0 1 59.9 45.6A0.9 0.9 0 0 1 60.6 43.9A1.5 1.5 0 0 0 59.4 46.6ZM60.6 43.9A1 1 0 0 1 61.3 42.1A0.7 0.7 0 0 1 61.8 40.7A1.7 1.7 0 0 0 60.6 43.9ZM61.8 40.7A1 1 0 0 1 62.2 38.8A3.4 3.4 0 0 1 63 32A4.4 4.4 0 0 0 61.8 40.7ZM63 32A3.4 3.4 0 0 1 62.2 25.2A1 1 0 0 1 61.8 23.3A4.4 4.4 0 0 0 63 32ZM61.8 23.3A0.7 0.7 0 0 1 61.3 21.9A1 1 0 0 1 60.6 20.1A1.7 1.7 0 0 0 61.8 23.3ZM60.6 20.1A0.9 0.9 0 0 1 59.9 18.4A0.6 0.6 0 0 1 59.4 17.4A1.5 1.5 0 0 0 60.6 20.1ZM59.4 17.4A0.7 0.7 0 0 1 58.7 16.3A1.7 1.7 0 0 1 56.8 13.4A2.4 2.4 0 0 0 59.4 17.4ZM56.8 13.4A1.8 1.8 0 0 1 54.4 10.6A0.8 0.8 0 0 1 53.4 9.6A2.6 2.6 0 0 0 56.8 13.4ZM53.4 9.6A0.7 0.7 0 0 1 52.4 8.6A1.1 1.1 0 0 1 50.6 7.2A1.8 1.8 0 0 0 53.4 9.6ZM50.6 7.2A1.3 1.3 0 0 1 48.4 5.7A1 1 0 0 1 46.6 4.6A2.4 2.4 0 0 0 50.6 7.2ZM46.6 4.6A1.5 1.5 0 0 1 43.9 3.4A6.2 6.2 0 0 1 32 1A7.8 7.8 0 0 0 46.6 4.6Z"/><circle cx="32" cy="32" r="31" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+    </footer>
+  </div>
+
 </body>
 </html>

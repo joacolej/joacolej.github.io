@@ -1,122 +1,256 @@
-/* Base styles for desktop (default) */
+/* Colours: light by default, dark when the visitor's system asks for it. */
+:root {
+  --bg: #f5f1fb;      /* pale lavender page background */
+  --text: #1f1d26;
+  --muted: #5c5868;
+  --rule: #e0d8ee;
+  --accent: #0f6aa6;  /* links */
+  --underline: rgb(15 106 166 / 0.35);
+  --purple: #6a3fa6;  /* section titles, dates, photo ring */
+
+  --serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1b1724;
+    --text: #e8e4ef;
+    --muted: #a7a0b6;
+    --rule: #332c40;
+    --accent: #7cbcec;
+    --underline: rgb(124 188 236 / 0.4);
+    --purple: #c3a6f2;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--serif);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  overflow-wrap: break-word; /* long DOIs/URLs never push the page sideways on phones */
 }
 
-header {
-    text-align: center;
-    padding: 2rem;
-    background-color: #1178b8;
-    color: white;
+p {
+  text-wrap: pretty; /* avoids single-word last lines, in browsers that support it */
 }
 
-h1, h2 {
-    margin: 0.5rem 0;
+.page {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 4.5rem 1.5rem 3rem;
 }
 
-section {
-    padding: 2rem;
-    margin: 2rem auto;
-    max-width: 1200px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.contact-container {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-}
-
-.contact-info {
-    flex: 2;
-}
-
-.photo img {
-    max-width: 300px;
-    height: auto;
-    border-radius: 50%;
-}
+/* Links ------------------------------------------------------------------ */
 
 a {
-    color: #1178b8;
-    text-decoration: none;
+  color: var(--accent);
+  text-decoration-line: underline;
+  text-decoration-color: var(--underline);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration-color: currentColor;
 }
 
-/* Lists */
-ul {
-    padding-left: 2rem;
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 2px;
 }
 
-ul li::before {
-    content: none;
-    color: #1178b8;
+abbr[title] {
+  text-decoration: underline dotted;
+  text-decoration-color: var(--muted);
+  text-underline-offset: 0.2em;
+  cursor: help;
 }
 
-/* Media queries for responsiveness */
-@media (max-width: 1024px) {
-    section {
-        padding: 1.5rem;
-    }
+/* Header ----------------------------------------------------------------- */
 
-    .contact-container {
-        gap: 1rem;
-    }
+.masthead {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2.75rem;
 }
 
-@media (max-width: 768px) {
-    body {
-        font-size: 0.9rem;
-    }
-
-    header {
-        font-size: 1.5rem;
-        padding: 1rem;
-    }
-
-    h1, h2 {
-        font-size: 1.2rem;
-    }
-
-    .contact-container {
-        flex-direction: column;
-    }
-
-    .contact-info {
-        flex: 1;
-    }
-
-    .photo img {
-        max-width: 150px;
-        margin: 0 auto;
-    }
-
-    section {
-        padding: 1rem;
-        margin: 1rem auto;
-    }
+.portrait {
+  flex: none;
+  width: 9.5rem;
+  height: 9.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 0 4px var(--bg), 0 0 0 6px var(--purple); /* thin coloured ring with a small gap */
 }
 
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.2rem;
-    }
+h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
 
-    section {
-        margin: 0.5rem auto;
-    }
+.role {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.45;
+}
 
-    ul {
-        padding-left: 1rem;
-    }
+.email {
+  margin: 0.75rem 0 0;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+}
+
+/* Sections --------------------------------------------------------------- */
+
+.bio p {
+  margin: 0 0 1em;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 3.25rem 0 1.5rem;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--purple);
+}
+
+h2::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(to right, var(--purple), var(--accent) 40%, var(--rule));
+  opacity: 0.6;
+}
+
+/* Papers, theses and talks: date on the left, details on the right. */
+.entries {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.entries > li {
+  display: grid;
+  grid-template-columns: 4.75rem 1fr;
+  column-gap: 1.25rem;
+  align-items: baseline;
+  margin-bottom: 1.25rem;
+}
+
+.entries time,
+.entries .when {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--purple);
+}
+
+.entries p {
+  margin: 0;
+}
+
+.title {
+  line-height: 1.4;
+}
+
+/* Titles in the lists are clearly links already; underline them only on hover. */
+a.title,
+.title a {
+  text-decoration-color: transparent;
+}
+
+a.title:hover,
+.title a:hover {
+  text-decoration-color: currentColor;
+}
+
+.entries .meta {
+  margin-top: 0.2rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.where {
+  color: var(--muted);
+}
+
+/* Footer ----------------------------------------------------------------- */
+
+.colophon {
+  margin-top: 4rem;
+  text-align: center;
+  color: var(--purple);
+}
+
+.farey {
+  width: 3rem;
+  height: 3rem;
+  opacity: 0.8;
+  transform: rotate(90deg);
+}
+
+/* Small screens ---------------------------------------------------------- */
+
+@media (max-width: 40rem) {
+  body {
+    font-size: 1.0625rem;
+  }
+
+  .page {
+    padding: 2.5rem 1.25rem 2rem;
+  }
+
+  .masthead {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .portrait {
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    margin-top: 2.5rem;
+  }
+
+  .entries > li {
+    grid-template-columns: 1fr;
+  }
 }
